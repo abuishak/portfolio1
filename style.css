@@ -16,8 +16,7 @@ body {
   padding: 0 30px;
   }
 
-    
-  /* ---  Navigation --- */
+     
   
   header nav {
 	display: flex;
@@ -66,8 +65,7 @@ body {
 	}
   }
   
-  /* ---  Primary Groups --- */
-  
+    
   main {
 	padding: 20px 0;
   }
@@ -94,8 +92,7 @@ body {
 	}
 
   
-  /* ---  Typography --- */
-  
+    
   h1 {
 	font-family: 'Playfair Display', serif;
 	font-style: italic;
@@ -193,7 +190,7 @@ h1, h2 {
 	color: #f0eee9;
   }
   
-  /* ---  (Desktop) Groups & Items --- */
+  
   
   @media all and (min-width: 800px) {
 	section {
@@ -206,11 +203,11 @@ h1, h2 {
   
   
   
-  /* Contact Form Design */
+ 
   
   form {
 	padding-right: 8px;
-	/* Fixed small sizing issue on the right */
+	
   }
   
   form label {
