@@ -1,129 +1,236 @@
-
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Noto+Sans:400,700|Noto+Serif);
+
 body {
 	background-color: #245;
   margin: auto;
   background-repeat: no-repeat;
   background-size: auto;
   margin: 0;
-}
 
+  }
+  
+  header {height: 140px;
+  background-color: #914e13;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  }
 
-header {
-	height: 140px;
-	background-color: #914e13;
+    
+  /* ---  Navigation --- */
+  
+  header nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  }
+  
+  header nav ul {
+	color: #f0eee9;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 0;
+	list-style: none;
+  }
+  
+  header nav ul li {
+	list-style-type: none;
+  }
+  
+  header nav ul li a {
+    font-family: Montserrat;
+    color:#f0eee9;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+  }
+
+  
+  header nav ul li a:hover {
+	color: #f0eee9;
+  }
+  
+  @media all and (min-width: 700px) {
+	header {
+	  display: flex;
+	  justify-content: space-between;
+	}
+  
+	.logo {
+	  margin: 14px 0 14px 20px;
+	  padding-top: 0;
+	  font-size: 42px;
+	}
+	
+	header nav {
+	  margin-top: 14px;
+	}
+  }
+  
+  /* ---  Primary Groups --- */
+  
+  main {
+	padding: 20px 0;
+  }
+  
+  section {
+	margin-bottom: 100px;
+  }
+  
+  section.dark-background {   
+	background-color:  #f0eee9 ;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin: 80px 0;
+  }
+  
+  footer {
+	width: 100%;
+	height: 20px;
+	clear:both;
+	background:#914e13;
+	text-align: center;
+  padding: 30px;
+  margin: 0;
 	}
 
-footer {
-		width: 100%;
-		height: 20px;
-		clear:both;
-		background:#914e13;
-		text-align: center;
-	  padding: 30px;
-	  margin: 0;
-		}
-.wrapper {
-			width: 580px;
-			margin: auto;	
-		}
-		img {
-			width: 100%;	
-		   }
-		   header h1 {
-			font-family: 'Playfair Display', serif;
-			font-style: italic;
-			color: #f0eee9;
-			margin: 0px;
-			padding-top: 24px;
-			font-size: 48px;
-			text-align:center;
-		}
-		
-		header h2 {
-			font-family: 'Playfair Display', serif;
-			font-style: italic;
-			color: #f0eee9;
-			margin: 0px;
-			padding-top: 16px;
-			font-size: 22px;
-			text-align: center;
-		}
-		
-		
-		
-		h1, h2 {
-			color: #f0eee9;
-			font-family: 'Noto Serif', serif;
-		}
-		
-		h1 { font-size: 38px;}
-		h2 { font-size: 30px;}
-		
-		p, li {
-			font-family: 'Noto Sans', sans-serif;
-			color: #f0eee9;
-			font-size: 18px;
-			font-weight: 400;
-			line-height: 26px;
-		}
-		
-		ul {
-		 list-style-image: url('images/common/coffee-cup-icon.png');
-		}
-		
-		a {
-			font-weight: 700;
-			text-decoration: none;	
-		}
-		
-		a:link { color: #38786a; }
-		a:visited { color: #38786a; }
-		a:hover { color: #403933; }
-		a:active { color: #403933; }
-		
-		
-		a:hover {
-			text-decoration: underline;	
-		}
-		
-		footer p {
-			color: #fff;	
-			text-align: center;
-		}
-		footer a:link { color: #698378; }
-		footer a:visited { color: #698378; }
-		footer a:hover { color: #a4cdbc; }
-		footer a:active { color: #a4cdbc; }
-		
-		
-				
-		img { border-radius: 8px;} 
-		
-		
-		
-		hr { border: .5px solid #ddcec1;}
-		
-		ul.coffee li {list-style-image: url('images/coffee-cup-icon.png'); }
-		
-		
-		.gap-sm {
-			height: 50px;
-			width: auto;
-		}
-		.gap-md {
-			height: 100px;
-			width: auto;
-		}
-		.gap-lg {
-			height: 200px;
-			width: auto;
-		}
-		
-		.gap-footer {
-			height: 10px;
-			width: auto;
-		}
-		   
+  
+  /* ---  Typography --- */
+  
+  h1 {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 42px;
+	color: #f0eee9;
+	margin: 14px 0;
+	padding-top: 6px;
+	font-size: 48px;
+	text-align:center;
+	font-size: 42px;
+margin: 14px 0;
+padding-top: 20px;
+}
 
+  
+  h2 {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	color: #f0eee9;
+	margin: 0px;
+	padding-top: 16px;
+	font-size: 22px;
+	text-align: center;
+}
 
+h1, h2 {
+	color: #f0eee9;
+	font-family: 'Noto Serif', serif;
+}
+
+  h3 {
+	color: #f0eee9;
+	font-size: 18px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 500;
+  }
+  
+  p {
+	color: #f0eee9;
+   font-family: 'Montserrat', sans-serif;
+   line-height: 1.5em;
+   margin-bottom: 0;
+  }
+  
+  main a {
+	color: #f0eee9;
+	  font-weight: 700;
+	  text-decoration: none;	
+  }
+  
+  main  a:link { color: #c78c20; }
+  main  a:visited { color: #c78c20; }
+  main  a:hover { color: #9b4d09; }
+  a:active { color: #9b4d09; }
+  
+  
+  a:hover {
+	  text-decoration: underline;	
+  }
+  
+  footer p {
+	color: #f0eee9;;
+	text-align: center;
+	padding: 20px;
+  }
+  
+  
+  main img {
+	width: 100%;
+	border: 1px solid #c5c0b8;
+	background-image:url(images/Abu.jpg);
+	background-repeat: no-repeat;
+}
+  
+  
+  img.image-enhanced {
+	border-radius: 8px;
+  }
+  
+  .group {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .item {
+	flex: 1;
+	margin: 10px;
+  }
+  
+  .item-double {
+	flex: 2;
+  }
+  
+  ul  {
+	color: #f0eee9;
+  }
+  
+  /* ---  (Desktop) Groups & Items --- */
+  
+  @media all and (min-width: 800px) {
+	section {
+	  padding: 0 10%;
+	}
+	.group {
+	  flex-direction: row;
+	}
+  }
+  
+  
+  
+  /* Contact Form Design */
+  
+  form {
+	padding-right: 8px;
+	/* Fixed small sizing issue on the right */
+  }
+  
+  form label {
+	display: block;
+  }
+  
+  form input, 
+  form textarea {
+	width: 100%;
+	margin-bottom: 20px;
+  }
+  
+  form textarea {
+	height: 160px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
