@@ -53,13 +53,7 @@ body {
 	  display: flex;
 	  justify-content: space-between;
 	}
-  
-	.logo {
-	  margin: 14px 0 14px 20px;
-	  padding-top: 0;
-	  font-size: 42px;
-	}
-	
+  		
 	header nav {
 	  margin-top: 14px;
 	}
@@ -82,7 +76,7 @@ body {
   }
   
   footer {
-	width: 100%;
+	width: auto;
 	height: 20px;
 	clear:both;
 	background:#914e13;
